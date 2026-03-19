@@ -2,6 +2,25 @@
   --text: #ffffff;
   --bg: #0a0806;
   --max-width: 1216px;
+  --px-title-secondary: 20px;
+  --px-text-primary: 24px;
+  --px-title: 64px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text);
 }
 
 body {
@@ -13,14 +32,8 @@ body {
   font-family: "Andada Pro", serif;
   font-weight: 400;
   background-color: #000000 75% no-repeat;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: var(--text);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
