@@ -1,0 +1,21 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
+  padding: 10px 20px;
+  max-width: var(--max-width);
+}
+
+.navbarList {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
