@@ -39,3 +39,8 @@
   line-height: 1.5;
   font-family: "Archivo", sans-serif;
 }
+
+.buttons {
+  display: flex;
+  gap: 16px;
+}

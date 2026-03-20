@@ -1,0 +1,33 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  padding: 0.875rem 2rem;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  gap: 8px;
+}
+
+.buttonPrimary {
+  background-color: var(--bg-btn-primary);
+}
+
+.buttonPrimary:hover {
+  background-color: var(--bg-btn-primary-hover);
+}
+
+.buttonSecundary {
+  background: none;
+  border: 2px solid var(--bg-btn-primary);
+  color: var(--text);
+}
+
+.buttonSecundary:hover {
+  background-color: var(--bg-btn-primary);
+  color: var(--bg);
+}

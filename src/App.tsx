@@ -1,4 +1,6 @@
 import style from "./App.module.css";
+import Play from "./assets/Play.svg";
+import Button from "./components/Button/Index";
 import NavBar from "./components/NavBar/Index";
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
             a desobedecem são transformados em animais.
           </p>
           <div className={style.buttons}>
-            <button>Assista Agora</button>
-            <button>Assista o Trailer</button>
+            <Button primary icon={<img src={Play} alt="play" />}>
+              Assista Agora
+            </Button>
+            <Button secundary>Assista o Trailer</Button>
           </div>
         </div>
         <div>Fantasmas</div>

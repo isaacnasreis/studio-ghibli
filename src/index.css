@@ -1,6 +1,8 @@
 :root {
   --text: #ffffff;
   --bg: #0a0806;
+  --bg-btn-primary: #f1a5b1;
+  --bg-btn-primary-hover: #e594a0;
   --max-width: 1216px;
   --px-title-secondary: 20px;
   --px-text-primary: 24px;
