@@ -1,6 +1,9 @@
 import style from "./App.module.css";
+import GhostFrente from "./assets/ilustracao-frente.png";
+import GhostPerfil from "./assets/ilustracao-perfil.png";
 import Play from "./assets/Play.svg";
 import Button from "./components/Button/Index";
+import Ghost from "./components/Ghost/Index";
 import NavBar from "./components/NavBar/Index";
 
 function App() {
@@ -8,7 +11,7 @@ function App() {
     <>
       <NavBar />
       <section className={style.principal} id="center">
-        <div className={style.content}>
+        <div className={style.contentLeft}>
           <h2 className={style.titleSecondary}>Hayao Miyazaki</h2>
           <h3 className={style.title}>A Viagem de Chihiro</h3>
           <p className={style.textPrimary}>
@@ -22,7 +25,10 @@ function App() {
             <Button secundary>Assista o Trailer</Button>
           </div>
         </div>
-        <div>Fantasmas</div>
+        <div className={style.contentRight}>
+          <Ghost img={GhostFrente} initialAnimation="up" />
+          <Ghost img={GhostPerfil} initialAnimation="down" />
+        </div>
       </section>
     </>
   );
