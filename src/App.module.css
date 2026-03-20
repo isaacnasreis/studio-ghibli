@@ -4,6 +4,7 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 20px;
+  padding-top: 80px;
   gap: 20px;
 }
 
@@ -19,6 +20,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 4px;
+}
+
+.contentRight > :last-child {
+  margin-left: -112px;
 }
 
 .titleSecondary {
@@ -49,4 +55,69 @@
 .buttons {
   display: flex;
   gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .principal {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding: 20px 24px 28px;
+    gap: 28px;
+  }
+
+  .contentLeft {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .contentRight {
+    order: -1;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .contentRight > :last-child {
+    margin-left: -84px;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .textPrimary {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .principal {
+    padding: 12px 16px 20px;
+    gap: 20px;
+  }
+
+  .contentRight {
+    gap: 0;
+  }
+
+  .contentRight > :last-child {
+    margin-left: -42px;
+  }
+
+  .title {
+    font-size: 36px;
+  }
+
+  .titleSecondary {
+    font-size: 18px;
+  }
+
+  .textPrimary {
+    font-size: 18px;
+  }
+
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
 }

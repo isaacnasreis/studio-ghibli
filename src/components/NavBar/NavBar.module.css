@@ -7,9 +7,6 @@
   flex-direction: row;
   padding: 10px 20px;
   max-width: var(--max-width);
-  position: fixed;
-  top: 0;
-  z-index: 100;
 }
 
 .navbarList {
@@ -21,4 +18,45 @@
   gap: 1.5rem;
   padding: 0;
   margin: 0;
+}
+
+.navbarLogo img {
+  display: block;
+  width: 110px;
+  height: auto;
+}
+
+.navbarList img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 10px 16px;
+  }
+
+  .navbarLogo img {
+    width: 96px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 10px 12px;
+  }
+
+  .navbarList {
+    gap: 0.6rem;
+  }
+
+  .navbarLogo img {
+    width: 84px;
+  }
+
+  .navbarList img {
+    width: 20px;
+    height: 20px;
+  }
 }

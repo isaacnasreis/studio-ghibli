@@ -2,7 +2,7 @@ import style from "./Ghost.module.css";
 
 interface GhostProps {
   img: string;
-  initialAnimation: string;
+  initialAnimation: "up" | "down";
 }
 
 const Ghost = ({ img, initialAnimation }: GhostProps) => {
