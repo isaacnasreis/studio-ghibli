@@ -13,6 +13,20 @@
   gap: 8px;
 }
 
+@media (max-width: 1024px) {
+  .button {
+    padding: 0.8rem 1.5rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .button {
+    width: 100%;
+    min-height: 48px;
+  }
+}
+
 .buttonPrimary {
   background-color: var(--bg-btn-primary);
 }
@@ -21,13 +35,13 @@
   background-color: var(--bg-btn-primary-hover);
 }
 
-.buttonSecundary {
+.buttonSecondary {
   background: none;
   border: 2px solid var(--bg-btn-primary);
   color: var(--text);
 }
 
-.buttonSecundary:hover {
+.buttonSecondary:hover {
   background-color: var(--bg-btn-primary);
   color: var(--bg);
 }

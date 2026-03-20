@@ -19,10 +19,10 @@ function App() {
             a desobedecem são transformados em animais.
           </p>
           <div className={style.buttons}>
-            <Button primary icon={<img src={Play} alt="play" />}>
+            <Button variant="primary" icon={<img src={Play} alt="play" />}>
               Assista Agora
             </Button>
-            <Button secundary>Assista o Trailer</Button>
+            <Button variant="secondary">Assista o Trailer</Button>
           </div>
         </div>
         <div className={style.contentRight}>

@@ -2,35 +2,20 @@ import style from "./Button.module.css";
 
 interface ButtonProps {
   children: React.ReactNode;
-  primary?: boolean;
-  secundary?: boolean;
+  variant?: "primary" | "secondary";
   icon?: React.ReactNode;
 }
 
-const Button = ({ children, primary, secundary, icon }: ButtonProps) => {
-  if (primary) {
-    return (
-      <button
-        className={`${style.buttonPrimary} ${style.button}`}
-        type="button"
-      >
-        {icon}
-        {children}
-      </button>
-    );
-  }
+const Button = ({ children, variant = "primary", icon }: ButtonProps) => {
+  const variantClass =
+    variant === "secondary" ? style.buttonSecondary : style.buttonPrimary;
 
-  if (secundary) {
-    return (
-      <button
-        className={`${style.buttonSecundary} ${style.button}`}
-        type="button"
-      >
-        {icon}
-        {children}
-      </button>
-    );
-  }
+  return (
+    <button className={`${variantClass} ${style.button}`} type="button">
+      {icon}
+      {children}
+    </button>
+  );
 };
 
 export default Button;
